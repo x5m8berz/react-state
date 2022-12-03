@@ -1,29 +1,12 @@
-import {useState} from 'react'
+import NameList from './component/NameList'
+import Count from './component/Count'
 import './App.css'
-
-function Count() {
-  const [count , setCount] = useState(0)
-
-  const icr = () => {
-    setCount(count + 1)
-  }
-
-  return (
-    <div className="App">
-      <button className='btn' onClick={icr}>
-        count = {count}
-      </button>
-    </div>
-  );
-}
 
 function App(){
   return (
     <div>
       <Count/>
-      <Count/>
-      <Count/>
-      <Count/>
+      <NameList/>
     </div>
   )
 }
